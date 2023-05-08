@@ -1,0 +1,33 @@
+server:
+  port: ${PORT:8060}
+
+spring:
+  application:
+    name: aiaplushk-simulator
+  output:
+    ansi:
+      enabled: always
+  main:
+    banner-mode: "off"
+  autoconfigure:
+    exclude[0]: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+    exclude[1]: org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration
+
+springdoc:
+  swagger-ui:
+    path: /openapi
+  
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    org.springframework.web.filter.CommonsRequestLoggingFilter: INFO
+
+file:
+  encoding: UTF-8

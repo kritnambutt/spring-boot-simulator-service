@@ -1,0 +1,46 @@
+openapi: 3.0.0
+x-stoplight:
+  id: 46e2n1xxve799
+info:
+  title: example-spec
+  version: '1.0'
+  contact:
+    name: palo-it-th
+  description: Example OpenApi Specification
+servers:
+  - url: 'http://localhost:8060'
+paths:
+  /users:
+    parameters: []
+    get:
+      summary: Get All Users
+      tags:
+        - example-tag
+      operationId: get-all-users
+      description: Get All Users
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+      x-examples:
+        Example:
+          id: ereq1241req142
+          firstName: John
+          lastName: Doe
+  responses: {}
