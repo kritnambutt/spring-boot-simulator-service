@@ -3,23 +3,14 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-package com.aiaplushk.server.api;
+package com.aiaplushk.server.api.User;
 
 import com.aiaplushk.server.model.User;
-import javax.annotation.processing.Generated;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 import io.swagger.annotations.*;
-import io.swagger.v3.oas.annotations.*;
-import io.swagger.v3.oas.annotations.media.*;
 
-
-import javax.validation.Valid;
-import javax.validation.constraints.*;
-import java.util.List;
-import java.util.Map;
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2023-03-02T15:20:36.062710+07:00[Asia/Bangkok]")
 @Validated
 @Api(value = "users", description = "the users API")

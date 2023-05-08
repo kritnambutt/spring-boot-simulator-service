@@ -1,15 +1,11 @@
-package com.aiaplushk.server.api;
+package com.aiaplushk.server.api.User;
 
-import com.aiaplushk.server.model.User;
-import javax.annotation.processing.Generated;
+import com.aiaplushk.server.api.ApiUtil;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.context.request.NativeWebRequest;
-import org.springframework.web.multipart.MultipartFile;
 
-import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 /**

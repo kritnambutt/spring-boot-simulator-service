@@ -1,7 +1,7 @@
 package com.aiaplushk.controllers;
 
 import com.aiaplushk.helpers.FileReader;
-import com.aiaplushk.server.api.UsersApiDelegate;
+import com.aiaplushk.server.api.User.UsersApiDelegate;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;

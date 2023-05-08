@@ -19,13 +19,12 @@
   </parent>
 
   <properties>
-    <default.package>com.aiaplushk</default.package>
-      <jarfile.finalName>app</jarfile.finalName>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <java.version>17</java.version>
-    <start-class>${default.package}.Application</start-class>
+    <java.version>11</java.version>
+    <!--suppress UnresolvedMavenProperty -->
+      <start-class>${default.package}.Application</start-class>
     <maven.build.timestamp.format>yyyy-MM-dd-HH-mm</maven.build.timestamp.format>
     <hibernate-validator.version>6.2.0.Final</hibernate-validator.version>
     <openapi-generator.version>5.2.1</openapi-generator.version>
@@ -143,7 +142,8 @@
     <distributionManagement>
 		<repository>
 			<id>${dist-repository-id}</id>
-                 <url>${dist-repository}</url>
+                 <!--suppress UnresolvedMavenProperty -->
+            <url>${dist-repository}</url>
 			<uniqueVersion>false</uniqueVersion>
 		</repository>
 	</distributionManagement>
